@@ -258,17 +258,17 @@ set term=screen-256color
 
 " 标签映射
 " 生成系统 头文件的 tags
-set tags+=~/.vim/systags
-set tags+=~/.vim/systags_local
+set tags+=~/tools_config/.vim/systags
+set tags+=~/tools_config/.vim/systags_local
 " map <leader><F12> :call Do_CsTag_Sys()<CR>
 map <leader><leader>T :call Do_CsTag_Sys()<CR>
 function! Do_CsTag_Sys()
-    delete("~/.vim/systags")
+    delete("~/tools_config/.vim/systags")
     " 本地自定义的头文件目录标签文件
-    delete("~/.vim/systags_local")
-    silent! execute "!ctags -R -f ~/.vim/systags -L ~/.vim/tags_list"
+    delete("~/tools_config/.vim/systags_local")
+    silent! execute "!ctags -R -f ~/tools_config/.vim/systags -L ~/tools_config/.vim/tags_list"
     " 需要自己新建 tags_list_local 文件，用以指示自定义的头文件目录
-    silent! execute "!ctags -R -f ~/.vim/systags_local -L ~/.vim/tags_list_local"
+    silent! execute "!ctags -R -f ~/tools_config/.vim/systags_local -L ~/tools_config/.vim/tags_list_local"
 endfunction
 
 " 使用 gf 跳转到对应的include文件

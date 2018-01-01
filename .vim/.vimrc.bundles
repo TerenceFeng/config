@@ -14,8 +14,8 @@
 " ==========================================
 set nocompatible               " be iMproved
 filetype off " required! turn off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/tools_config/.vim/bundle/vundle/
+call vundle#begin('~/tools_config/.vim/bundle')
 
 " ################### Bundles 配置 #########################
 " 使用Vundle来管理插件
@@ -30,7 +30,6 @@ Bundle 'gmarik/vundle'
 " ##### Themes
 Bundle 'tomasr/molokai'
 set background=dark
-colorscheme molokai
 
 Bundle 'szw/vim-tags'
 
@@ -52,7 +51,7 @@ let g:syntastic_enable_highlighting=1
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 " racket support
-let g:syntastic_racket_code_ayatollah_script = "~/.vim/bundle/racket-checker.rkt"
+let g:syntastic_racket_code_ayatollah_script = "~/tools_config/.vim/bundle/racket-checker.rkt"
  	" 使用pyflakes,速度比pylint快
 " let g:syntastic_python_checkers=['pep8', 'pyflakes']
 " let g:syntastic_python_pep8_args='--ignore=E501,E225'
@@ -266,4 +265,6 @@ set laststatus=2
 
 
 " ################## 插件配置结束 ###########################
+call vundle#end()
 filetype plugin indent on     " required!
+colorscheme molokai
