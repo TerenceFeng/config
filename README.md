@@ -6,7 +6,7 @@ git clone git@github.com:TerenceFeng/config.git ~/tools_config/
 cd ~/tools_config/
 ./config.sh
 ```
-Old .bash_profile, .bashrc, .vimrc will be added a suffic ".old" after running the script.
+Old .bash_profile, .bashrc, .vimrc will be added a suffix ".old" after running the script.
 
 ### Vim Features
 ``` bash
