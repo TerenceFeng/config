@@ -1,0 +1,14 @@
+" FileType Settings  文件类型设置
+
+" autocmd BufRead,BufNew *.decl setfiletype cpp
+autocmd FileType handlebars set filetype=html syntax=html
+autocmd BufRead,BufNew *.md,*.mkd,*.markdown  set filetype=markdown.mkd
+
+" set some keyword to highlight
+if has("autocmd")
+" Highlight TODO, FIXME, NOTE, etc.
+if v:version > 701
+	autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
+	autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)')
+endif
+endif
