@@ -187,6 +187,8 @@ endif
 
 "==========================================
 " OCaml settings
+" <C-x><C-o> given a prefix, it will suggest all the elements of the current
+"            environment matching the given prefix and display their type.
 "==========================================
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
