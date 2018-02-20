@@ -1,7 +1,11 @@
 " FileType Settings  文件类型设置
 
+" Ocaml
+set rtp^="/Users/feng/.opam/system/share/ocp-indent/vim/"
+
 " autocmd BufRead,BufNew *.decl setfiletype cpp
 autocmd FileType handlebars set filetype=html syntax=html
+autocmd FileType ml,mll,mly set syntax=ocaml
 autocmd BufRead,BufNew *.md,*.mkd,*.markdown  set filetype=markdown.mkd
 
 " set some keyword to highlight

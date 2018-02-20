@@ -28,7 +28,7 @@ Huge version without GUI.  Features included (+) or not (-):
 +comments        +langmap         +printer         +visualextra
 +conceal         +libcall         +profile         +viminfo
 +cryptv          +linebreak       +python          +vreplace
-+cscope          +lispindent      -python3         +wildignore
++cscope          +lispindent      +python3         +wildignore
 +cursorbind      +listcmds        +quickfix        +wildmenu
 +cursorshape     +localmap        +reltime         +windows
 +dialog_con      -lua             +rightleft       +writebackup
@@ -45,6 +45,6 @@ Huge version without GUI.  Features included (+) or not (-):
 
 ### Vim Compilation Properties
 ``` bash
-./configure --with-features=huge --enable-rubyinterp --enable-pythoninterp  --enable-perlinterp --enable-gui=auto --enable-cscope --enable-luainterp --enable-perlinterp --enable-multibyte
+./configure --with-features=huge --enable-rubyinterp --enable-pythoninterp  --enable-perlinterp --enable-gui=auto --enable-cscope --enable-luainterp --enable-perlinterp --enable-multibyte --enable-python3interp
 ```
 
