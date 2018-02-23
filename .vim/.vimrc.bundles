@@ -30,6 +30,9 @@ Bundle 'gmarik/vundle'
 " ##### Themes
 Bundle 'tomasr/molokai'
 set background=dark
+Bundle 'nightsense/seagrey'
+let g:seagrey_dark_LineNr = 'off'
+let g:seagrey_dark_CursorLineNr = 'off'
 
 Bundle 'szw/vim-tags'
 
@@ -292,4 +295,5 @@ set laststatus=2
 " ################## 插件配置结束 ###########################
 call vundle#end()
 filetype plugin indent on     " required!
-colorscheme molokai
+" colorscheme molokai
+colorscheme seagrey-dark
