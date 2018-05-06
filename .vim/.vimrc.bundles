@@ -30,9 +30,6 @@ Bundle 'gmarik/vundle'
 " ##### Themes
 Bundle 'tomasr/molokai'
 set background=dark
-Bundle 'nightsense/seagrey'
-let g:seagrey_dark_LineNr = 'off'
-let g:seagrey_dark_CursorLineNr = 'off'
 
 Bundle 'szw/vim-tags'
 
@@ -96,7 +93,7 @@ let g:ycm_global_ycm_extra_conf = '~/tools_config/.vim/bundle/YouCompleteMe/thir
 set completeopt=menu,menuone
 noremap <c-z> <NOP>
 let g:ycm_semantic_triggers = {
-    \   'c,cpp,python,erlang,ocaml' : ['re\w{2}'],
+    \   'c,cpp,python,erlang,ocaml' : ['re\w{1}'],
     \   'javascipt'                 : ['re\w{2}'],
     \}
 let g:ycm_filetype_whitelist = {
@@ -105,6 +102,7 @@ let g:ycm_filetype_whitelist = {
     \ "sh"      : 1,
     \ "zsh"     : 1,
     \ "ocaml"   : 1,
+    \ "python"  : 1,
     \ }
 
 " ###### 快速注释
@@ -295,5 +293,4 @@ set laststatus=2
 " ################## 插件配置结束 ###########################
 call vundle#end()
 filetype plugin indent on     " required!
-" colorscheme molokai
-colorscheme seagrey-dark
+colorscheme molokai

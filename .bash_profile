@@ -1,12 +1,12 @@
 export PATH="$PATH:/bin:/usr/local/bin:/usr/bin:/opt/local/bin:/opt/local/sbin"
-export PATH="$PATH:/Applications/MATLAB_R2015b.app/bin/maci64/"
+# export PATH="$PATH:/Applications/MATLAB_R2017a.app/bin/maci64/"
 
 # for color
 export CLICOLOR=1
 . ~/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 # Terence\u\
-export PS1='\[\033[36m\]Mariturus te saluto\[\033[37m\]/\w\n\[\033[1;31m\]✍\[\033[1;34m\]$(__git_ps1)\[\033[1;31m\] ⟹  \[\033[00m\]'
+export PS1='\[\033[36m\]Mariturus te saluto\[\033[37m\]/\w\[\033[1;34m\]$(__git_ps1) \n\[\033[1;31m\]✍ \[\033[1;31m\]⟹  \[\033[00m\] '
 
 #
 ## vi imput mode
@@ -54,6 +54,9 @@ alias racket="${Rack_bin_d}racket"
 alias drracket="${Rack_bin_d}drracket"
 
 # Matlab command line tool
-Matlab_bin_d="/Applications/MATLAB_R2015b.app/bin/"
+Matlab_bin_d="/Applications/MATLAB_R2017a.app/bin/"
 alias matlab="${Matlab_bin_d}matlab -nodesktop"
 # alias mlint="${Matlab_bin_d}maci64/mlint"
+
+# opencl
+alias openclc="/System/Library/Frameworks/OpenCL.framework/Libraries/openclc"
