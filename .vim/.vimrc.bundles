@@ -93,12 +93,13 @@ let g:ycm_global_ycm_extra_conf = '~/tools_config/.vim/bundle/YouCompleteMe/thir
 set completeopt=menu,menuone
 noremap <c-z> <NOP>
 let g:ycm_semantic_triggers = {
-    \   'c,cpp,python,erlang,ocaml' : ['re\w{1}'],
+    \   'c,cpp,cc,python,erlang,ocaml' : ['re\w{1}'],
     \   'javascipt'                 : ['re\w{2}'],
     \}
 let g:ycm_filetype_whitelist = {
     \ "c"       : 1,
     \ "cpp"     : 1,
+    \ "cc"      : 1,
     \ "sh"      : 1,
     \ "zsh"     : 1,
     \ "ocaml"   : 1,

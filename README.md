@@ -48,3 +48,9 @@ Huge version without GUI.  Features included (+) or not (-):
 ./configure --with-features=huge --enable-rubyinterp --enable-pythoninterp  --enable-perlinterp --enable-gui=auto --enable-cscope --enable-luainterp --enable-perlinterp --enable-multibyte --enable-python3interp
 ```
 
+### Reinstall YCM
+``` bash
+# under ~/tools_config/.vim/bundle/YouCompleteMe/
+# --clang-completer enables symantic completion
+./install.py --clang-completer
+```

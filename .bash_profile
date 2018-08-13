@@ -60,3 +60,17 @@ alias matlab="${Matlab_bin_d}matlab -nodesktop"
 
 # opencl
 alias openclc="/System/Library/Frameworks/OpenCL.framework/Libraries/openclc"
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+# export PATH
+
+##
+# Your previous /Users/feng/.bash_profile file was backed up as /Users/feng/.bash_profile.macports-saved_2018-08-02_at_22:07:06
+##
+
+# MacPorts Installer addition on 2018-08-02_at_22:07:06: adding an appropriate MANPATH variable for use with MacPorts.
+export MANPATH="/opt/local/share/man:$MANPATH"
+# Finished adapting your MANPATH environment variable for use with MacPorts.
+
