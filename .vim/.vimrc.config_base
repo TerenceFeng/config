@@ -123,13 +123,13 @@ endfun
 " ##### 缩进配置
 set smartindent
 set autoindent
-set ts=4
-set sw=4
+set ts=2
+set sw=2
 set expandtab
 
-" 按退格键时可以一次删掉 4 个空格
-set softtabstop=4
-" insert tabs on the start of a line according to shiftwidth, not tabstop 按退格键时可以一次删掉 4 个空格
+" 按退格键时可以一次删掉 2 个空格
+set softtabstop=2
+" insert tabs on the start of a line according to shiftwidth, not tabstop 按退格键时可以一次删掉 2 个空格
 set smarttab
 " 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
 set shiftround
